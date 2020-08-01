@@ -89,6 +89,11 @@ body {
     padding-left: 30px;
     width: 100%;
     position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 10px;
   }
   
   .carousel__container {
@@ -96,9 +101,13 @@ body {
     transition: 450ms transform;
     transition: 450ms transform, 450ms -webkit-transform;
     font-size: 0;
-    white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
   }
   
   .carousel__container:hover .carousel-item {
@@ -107,7 +116,7 @@ body {
   
   .carousel__container:hover .carousel-item:hover {
     -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 1;
   }
   
@@ -122,8 +131,10 @@ body {
     font-size: 20px;
     cursor: pointer;
     transition: 450ms all;
+    justify-content: space-around;
     -webkit-transform-origin: center left;
-            transform-origin: center left;
+    transform-origin: center left;
+    margin-top: 50px;
   }
   
   .carousel-item:hover ~ .carousel-item {

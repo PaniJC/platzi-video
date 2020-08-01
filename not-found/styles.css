@@ -16,46 +16,18 @@ body {
   margin-left: 30px;
   width: 200px;
 }
-.register {
+.error {
   background: linear-gradient(#21C08B, #AB88FF);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 30px;
   min-height: calc(100vh - 200px);
-}
-.register__container {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid white;
-  border-radius: 40px;
   color: white;
-  padding: 60px 68px 40px;
-  min-height: 700px;
-  width: 300px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  box-shadow: 2px 2px 20px #666;
 }
-.register__container--form {
-  display: flex;
-  flex-direction: column;
-}
-.register__container--form label {
-  font-size: 14px;
-}
-.register__container--iniciar {
-  font-size: 14px;
-  text-decoration: none;
-  color: white;
-  display: flex;
-  justify-content: center;
-  font-family: 'Muli', sans-serif;
-  font-weight: bold;
-}
-.register__container--iniciar:hover{
-  text-decoration: underline;
+.error__h {
+  font-size: 80px;
+  margin: 0px;
 }
 .input {
   background-color: transparent;
@@ -102,6 +74,21 @@ body {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
 }
 
 @media only screen and (max-width: 600px) {
